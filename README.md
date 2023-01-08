@@ -1,6 +1,6 @@
 Hello there!
 
-Thiis is me going through the 100 days of code challenge. 
+This is me going through the 100 days of code challenge. 
 
 General plan:
 
