@@ -120,3 +120,13 @@ function removeElement(newArr){
 removeElement(concept);
 
 console.log(concept);
+
+// Exercise 11 - Nested Arrays 
+
+const numberClusters = [[1, 2], [3, 4], [5, 6]];
+
+// chain: first bracket adresses array inside array, second addresses elemnt inside array
+const target = numberClusters[2][1];
+
+// Logs 6
+console.log(target);
