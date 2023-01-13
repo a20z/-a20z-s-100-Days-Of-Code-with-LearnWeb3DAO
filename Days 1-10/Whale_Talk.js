@@ -1,4 +1,4 @@
-// Codecademy project for turning speech into whale talk
+// Whale Talk
 
 
 let input = 'Dark Souls is the best';
