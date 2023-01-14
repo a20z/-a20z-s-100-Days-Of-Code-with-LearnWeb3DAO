@@ -127,4 +127,6 @@ const newSum = newNumbers.reduce(function(accumulator, currentValue){
   }, 10);
 
   console.log(newSum);
-    
+   
+  
+// Exercise 8 - Iterator documentation
