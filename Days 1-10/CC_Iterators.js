@@ -150,5 +150,4 @@ console.log(words.some(() => {
 // console.log(interestingWords.every((word) => { } ));
 
 
-// Look at exercise 8 again
-Agin
+// Look at exercise 8 
