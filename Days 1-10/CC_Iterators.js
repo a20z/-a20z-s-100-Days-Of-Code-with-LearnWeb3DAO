@@ -137,6 +137,19 @@ console.log('hola');
 
 // Something is missing in the method call below
 
-console.log(words.some(() => {
+console.log(words.some((word) => {
   return word.length < 6;
 }));
+
+// Use filter to create a new array
+const interestingWords = words.filter(word => word.length > 5);
+
+
+// Make sure to uncomment the code below and fix the incorrect code before running it
+
+// .every method tests whether all elements in the array pass the test implemented by the provided function. returns boolean value
+
+console.log(interestingWords.every((word) => {return word.length > 5} ));
+
+
+// Exercise 9 - Choose the right iteratot
