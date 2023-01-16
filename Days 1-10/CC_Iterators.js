@@ -185,7 +185,7 @@ Methods to really keep in mind
 .forEach() - used to exeute ther same code on every element in an array 
   but does not change the array and returns undefined
 
-.map() - executes the same code on every element in array and returns a nre array with the updated elements
+.map() - executes the same code on every element in array and returns a new array with the updated elements
 
 .filter() - checks evey element in an an array to see if it meets certain criteria and  
   returns a new array with the elements that return truthy for the criteria
@@ -194,7 +194,7 @@ Methods to really keep in mind
   callback function. it returns -1 if none of the elements in the array satisfies the condition
 
 .reduce() - iterates through an array and takes the values of the elements  
-  and returns a new array with the updated elemets
+  and returns a new array with the updated elemets --- returns a single value after iterating trough array elements
 
 # note: all iterator methods take a callback functiuon, which can be a pre-defined function, 
   a function expression, or an arrow function
