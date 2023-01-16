@@ -153,3 +153,59 @@ console.log(interestingWords.every((word) => {return word.length > 5} ));
 
 
 // Exercise 9 - Choose the right iteratot
+
+const cities = ['Orlando', 'Dubai', 'Edinburgh', 'Chennai', 'Accra', 'Denver', 'Eskisehir', 'Medellin', 'Yokohama'];
+
+const nums = [1, 50, 75, 200, 350, 525, 1000];
+
+//  Choose a method that will return undefined
+cities.forEach(city => console.log('Have you visited ' + city + '?'));
+
+// Choose a method that will return a new array
+const longCities = cities.filter(city => city.length > 7);
+
+// Choose a method that will return a single value
+const word = cities.reduce((acc, currVal) => {
+  return acc + currVal[0]
+}, "C");
+
+console.log(word)
+
+// Choose a method that will return a new array
+const smallerNums = nums.map(num => num - 5);
+
+// Choose a method that will return a boolean value
+nums.every(num => num < 0);
+
+
+/*
+
+Methods to really keep in mind
+
+.forEach() - used to exeute ther same code on every element in an array 
+  but does not change the array and returns undefined
+
+.map() - executes the same code on every element in array and returns a nre array with the updated elements
+
+.filter() - checks evey element in an an array to see if it meets certain criteria and  
+  returns a new array with the elements that return truthy for the criteria
+
+.findIndex() - returns the index of the first element of an array that satisfies a condition in the 
+  callback function. it returns -1 if none of the elements in the array satisfies the condition
+
+.reduce() - iterates through an array and takes the values of the elements  
+  and returns a new array with the updated elemets
+
+# note: all iterator methods take a callback functiuon, which can be a pre-defined function, 
+  a function expression, or an arrow function
+  */
+
+
+
+/*
+
+Further notes:
+
+# a higher order function accepts functions as paramenters and/or returs a function
+
+*/
