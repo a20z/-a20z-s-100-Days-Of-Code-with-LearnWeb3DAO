@@ -41,6 +41,8 @@ robot.checkEnergy();
 
 // Exerecise 3 - privacy 
 
+
+
 const robot = {
   _energyLevel: 100,
   recharge(){
@@ -52,4 +54,10 @@ const robot = {
 
 robot._energyLevel = 'high';
 
+// logg : Recharged! Energy is currently at high30%.
 robot.recharge();
+ /*
+  that a funky string is printed to the console! This is known as a side-effect of type-coercion. 
+  No need to worry about what this means for now, but it’s important to understand that you can 
+  cause unwanted side-effects when mutating objects and their properties.
+ */
