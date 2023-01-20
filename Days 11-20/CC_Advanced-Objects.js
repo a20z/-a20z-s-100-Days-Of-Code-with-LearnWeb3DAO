@@ -8,7 +8,7 @@ const robot = {
     provideInfo(){
       return `I am ${this.model} and my current energy level is ${this.energyLevel}`
     }
-  };
+};
   
 console.log(robot.provideInfo());
 
@@ -16,7 +16,29 @@ console.log(robot.provideInfo());
 The this keyword
 
 A function's this keyword behaves a litel differently in JavaScript compared to 
-
-
+other languages.
+In most cases the value of this is determined by how a functio is callled (runtime binding).
+It cant be set by assignment during execution, and it may be different each time the function
+is called. 
 
 */
+
+// Exercise 2 - Arrow functions and this 
+
+/*
+this does not work woith arrow functions becuase arrow functions inherently bind
+an already defined this value to the function iteself that is NOT callin gobject.
+*/
+
+const robot = {
+    energyLevel: 100,
+    checkEnergy: function()  {
+      console.log(`Energy is currently at ${this.energyLevel}%.`)
+    }
+}
+  
+robot.checkEnergy();
+
+// Exerecise 3 - privacy 
+
+
