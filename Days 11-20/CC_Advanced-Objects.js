@@ -61,3 +61,5 @@ robot.recharge();
   No need to worry about what this means for now, but it’s important to understand that you can 
   cause unwanted side-effects when mutating objects and their properties.
  */
+
+// Exercise 4 - Getters
