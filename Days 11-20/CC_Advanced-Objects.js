@@ -64,4 +64,13 @@ robot.recharge();
 
 // Exercise 4 - Getters
 
-FUN 
+/*  Getters are medthods that get and return the internal propewrties of an object
+
+Notable advantages of using getter methods:
+
+# getters can preform an action on the data when getrting a property
+# getters can return different values using conditionals
+# in a getter we can access the properties of the calling using this
+# the functionality of code becomes easier for developers to understand+
+
+*/
