@@ -64,4 +64,4 @@ robot.recharge();
 
 // Exercise 4 - Getters
 
-AND SETTERS
+A
