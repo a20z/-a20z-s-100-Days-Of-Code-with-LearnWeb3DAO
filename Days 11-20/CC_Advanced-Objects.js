@@ -63,5 +63,3 @@ robot.recharge();
  */
 
 // Exercise 4 - Getters
-
-A
