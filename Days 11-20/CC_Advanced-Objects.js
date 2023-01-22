@@ -64,7 +64,7 @@ robot.recharge();
 
 // Exercise 4 - Getters
 
-/*  Getters are medthods that get and return the internal propewrties of an object
+/*  Getters are medthods that get and return the internal properties of an object
 
 Notable advantages of using getter methods:
 
@@ -85,5 +85,9 @@ const robot = {
   }
 };
 
-
 console.log(robot.energyLevel);
+
+// Exercise 5 - Setters 
+
+// Setter methods reassign values of existing propperties within an object
+
