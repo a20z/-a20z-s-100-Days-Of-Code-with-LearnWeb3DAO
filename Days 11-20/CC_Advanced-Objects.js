@@ -167,4 +167,45 @@ const { functionality } = robot;
 
 functionality.beep();
 
-// Exercise 9 - 
+// Exercise 9 - Built in methods
+
+const robot = {
+	model: 'SAL-1000',
+  mobile: true,
+  sentient: false,
+  armor: 'Steel-plated',
+  energyLevel: 75
+};
+
+// What is missing in the following method call?
+// Object.keys() static method returns an array of a given objects one enumerable string-keyed property pairs
+const robotKeys = Object.keys(robot);
+
+console.log(robotKeys);
+
+// Object.entries() static method returns an array of a given objects own enumerable string-keyed property value pairs
+// Declare robotEntries below this line:
+const robotEntries = Object.entries(robot);
+
+console.log(robotEntries);
+
+// Object.assign() copies all enumerable own properties from one or more source objects to a target object
+// Declare newRobot below this line:
+const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true}, robot);
+
+console.log(newRobot);
+
+
+/* Review
+
+# the obkect that a method belongs o is called the calling object
+# the this keyword refers to the calling object and can be used to access properties of the calling object
+# methods do not automatically have access to other internal properties of the calling object
+# the value of this depends on where the this is being accesseed from 
+# we cannot use arrorw functions as methods if we want to access other internal propertis
+# javascript objects do not jave built-in priivacy, rather there are conventions to follow to notify
+  other developoers aboout the code
+
+
+
+*/
