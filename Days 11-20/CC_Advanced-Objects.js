@@ -17,7 +17,7 @@ The this keyword
 
 A function's this keyword behaves a litel differently in JavaScript compared to 
 other languages.
-In most cases the value of this is determined by how a functio is callled (runtime binding).
+In most cases the value of this is determined by how a function is callled (runtime binding).
 It cant be set by assignment during execution, and it may be different each time the function
 is called. 
 
@@ -27,7 +27,7 @@ is called.
 
 /*
 this does not work woith arrow functions becuase arrow functions inherently bind
-an already defined this value to the function iteself that is NOT callin gobject.
+an already defined this value to the function iteself that is NOT calling object.
 */
 
 const robot = {
