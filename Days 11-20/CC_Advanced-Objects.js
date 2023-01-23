@@ -205,7 +205,10 @@ console.log(newRobot);
 # we cannot use arrorw functions as methods if we want to access other internal propertis
 # javascript objects do not jave built-in priivacy, rather there are conventions to follow to notify
   other developoers aboout the code
-
-
+# the usage of an underscore before a property name means that the original developer did not intend for 
+  that property to be disrectly changed
+# setters and getter methods allow for more detailed ways pf accessing and assigning properties
+# factory functions allow us to create object destructuring: one way is the property value shorthand and
+  another is destructured asasignment
 
 */
