@@ -1,3 +1,3 @@
 // intermediate JS concepts
 //intermediate concepts
-// JavaScript is cool
+// JavaScript is fun
