@@ -64,5 +64,3 @@ function carCrossing(aCrossing, bCrossing) {
 
 module.exports = carCrossing;
 
-
-// Exceptions 
