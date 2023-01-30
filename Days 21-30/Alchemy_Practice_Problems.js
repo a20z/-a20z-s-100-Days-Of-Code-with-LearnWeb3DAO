@@ -47,3 +47,22 @@ function friendName(friend) {
 }
 
 module.exports = friendName;
+
+// Not Operator
+
+function carCrossing(aCrossing, bCrossing) {
+    if (aCrossing && !bCrossing){
+        return true;
+    }
+
+    if (!aCrossing && bCrossing){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+module.exports = carCrossing;
+
+
+// 
