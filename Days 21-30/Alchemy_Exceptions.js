@@ -10,3 +10,20 @@ function throwError() {
         throw new Error('Anything above a 4 is wrong and you should feel bad.');
     }
 }
+
+// Catch an Error
+
+function catchError(fn) {
+    try {
+        fn();
+    }
+
+    catch(fn){
+
+    };
+
+}
+
+// Return Error
+
+
