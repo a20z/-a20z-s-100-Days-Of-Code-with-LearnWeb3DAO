@@ -37,3 +37,13 @@ function playerHandScore(hand) {
     return score;
 }
 module.exports = playerHandScore;
+
+// Guard Orperator
+
+function friendName(friend) {
+    
+    
+    return friend && friend.name;
+}
+
+module.exports = friendName;
