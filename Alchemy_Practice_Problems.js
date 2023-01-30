@@ -23,3 +23,17 @@ function countElements(elements) {
 }
 
 module.exports = countElements;
+
+// Player Hand Score 
+
+function playerHandScore(hand) {
+    let score = 0;
+    const points = { "K": 4, "Q": 3, "J": 2 };
+
+    for (let i = 0; i < hand.length; i++) {
+        score += points[hand[i]] || 0;
+    }
+
+    return score;
+}
+module.exports = playerHandScore;
