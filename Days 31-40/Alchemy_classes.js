@@ -112,4 +112,3 @@ class Hero {
 
 module.exports = Hero;
 
-//
