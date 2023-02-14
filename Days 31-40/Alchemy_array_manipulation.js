@@ -20,3 +20,12 @@ We want a negative result to move b in front of a and a positive result to move 
 function sortDown(array) {
     array.sort((a, b) => b-a);
 }
+
+// Comparing strings
+
+/* 
+String.prototype.localeCompare()
+
+localeCompare() method returns a number indicting wherter a reference string comes before, or after,
+or is the same as the given sort order 
+*/
