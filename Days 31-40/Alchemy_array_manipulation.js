@@ -29,3 +29,21 @@ String.prototype.localeCompare()
 localeCompare() method returns a number indicting wherter a reference string comes before, or after,
 or is the same as the given sort order 
 */
+
+function sortStringsUp(array) {
+    array.sort((a,b) => {
+        return a.localeCompare(b);
+    });
+}
+
+// Strings descending
+
+function sortStringsDown(array) {
+    array.sort(function comparison(a, b){
+        return b.localeCompare(a);
+    })
+}
+
+// Sort students
+
+// Sorting by multiple properties
