@@ -48,4 +48,20 @@ function sortStringsDown(array) {
 
 // Sorting by multiple properties
 
-//
+// using sort
+function sortStudents(students) {
+    students.sort((a, b) => b.grade - a.grade).sort((a, b) => b.graduated - a.graduated);
+}
+
+// using if statements
+function sortStudents(students) {
+    students.sort((a,b) => {
+        if (a.graduated && !b.graduated) {
+            return -1;
+        } 
+        if (b.graduated && !a.graduated) {
+            return 1;
+        }
+        return b.grade - a.grade;
+    });
+}

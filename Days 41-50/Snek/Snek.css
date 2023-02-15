@@ -1,0 +1,15 @@
+#canvas-container {
+	margin: 20px;
+}
+
+#buttons {
+	margin: 20px;
+}
+
+#start-button {
+	margin-right: 20px;
+}
+
+canvas {
+	border: 1px solid black;
+}
