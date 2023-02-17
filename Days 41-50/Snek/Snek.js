@@ -90,3 +90,4 @@ function update() {
 		drawFood();
 		drawSnake();
 	}
+}
