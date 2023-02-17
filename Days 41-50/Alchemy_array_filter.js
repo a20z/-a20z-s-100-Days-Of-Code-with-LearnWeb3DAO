@@ -26,3 +26,22 @@ function shortStrings(array) {
         return x.length <= 3
     }));
 }
+ // Filrtering objects
+// Return students whose grades are at least 90
+
+ function topStudents(array) {
+    return array.filter(function (studentGrades) {
+        return studentGrades.grade >= 90;
+    })
+}
+
+// Filtering By Index
+// Given an array of elements, keep only the first 3 elements
+
+function firstThree(array) {
+    return array.filter(function(x, i){
+        return i < 3;
+    })
+}
+
+// Unique 
