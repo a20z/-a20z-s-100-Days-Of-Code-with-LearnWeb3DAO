@@ -21,3 +21,8 @@ module.exports = plusOne;
 
 // Using the SquareRoot function, map each element in the array arr to its square root, return new array
 
+function squareRoot(arr) {
+    return arr.map(function(x){
+        return Math.sqrt(x);
+    })
+}
