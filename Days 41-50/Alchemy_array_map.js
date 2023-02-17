@@ -26,3 +26,44 @@ function squareRoot(arr) {
         return Math.sqrt(x);
     })
 }
+
+// Square it
+
+function squared(n) {
+    return n * n;
+}
+
+// Map squared
+
+// Giaven an aray if elemenrs in squaredMap, return an array w each element squared
+
+const squared = require('./squared');
+
+function squaredMap(arr) {
+    return arr.map(function(x){
+        return squared(x);
+    })
+}
+
+// Add Score
+// Mapping over objects
+
+function addScore(players) {
+    return players.map(function(addTen){
+        addTen.score += 10;
+        return addTen;
+    })
+}
+
+// Array map Index
+
+// Modify addScoore to only add 10 points to first 3 players
+
+function addScore(players) {
+    return players.map(function(addTen, i){
+        if (i <= 2){
+            addTen.score += 10;
+        }
+        return addTen;
+    })
+}
