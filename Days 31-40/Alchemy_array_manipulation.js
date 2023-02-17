@@ -65,3 +65,7 @@ function sortStudents(students) {
         return b.grade - a.grade;
     });
 }
+
+// Sorting by month
+
+// use indexOf() array method - index() returns the first index at which given element can be found in the arraym or -1 of notr present
