@@ -45,3 +45,8 @@ function firstThree(array) {
 }
 
 // Unique 
+function unique(array) {
+    return array.filter(function(x, i){
+        return array.indexOf(x) === i;
+    })
+}
