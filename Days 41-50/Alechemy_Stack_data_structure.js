@@ -71,7 +71,9 @@ class Stack {
 }
 
 // ------------------ Code breakdown -------
-
+/*Overall, this code implements basic stack data structure with error handeling 
+for stack overflow and undereflow. it also provides methods to chech wheryher the
+stack is empty and to peek at the top element of the stack */
 const { MAX_STACK_SIZE } = require('./config');
 
 class Stack {
@@ -90,16 +92,22 @@ class Stack {
         this.items.push(item);
     }
     pop() {
-        /*the pop method removes and returns the item at the top of the stack.  */
+        /*the pop method removes and returns the item at the top of the stack. Before removing the item,
+        it checks if the stack is empty by comparing the current length of the stack to zero.
+        OIf the stack is empty, it throws an error with the messege "Sack Underflow" */
         if (this.items.length === 0) {
             throw new Error("Stack Underflow");
         }
         return this.items.pop();
     }
     isEmpty() {
+        /*this method is used to check if the stack is  empty or not. It returns true if the
+        stack is empty, false otherwise by checking the length of the this,items array */
         return this.items.length === 0;
     }
     peek() {
+        /* the peek method return the item at the top of the stack without removing it. It does
+        this by returning the last item in the this.items array */
         return this.items[this.items.length - 1];
     }
 }
