@@ -129,7 +129,7 @@ class OperationManager {
         this.operations.push(operation);
     }
     /*the undo method removes the most recent operation from the this.operations stack using the pop method
-    , and rhen pushes it into the this.undos stack using the push method. this means that the most recent 
+    , and then pushes it into the this.undos stack using the push method. this means that the most recent 
     operation is removed from the list of operations that have been undone*/
     undo() {
         const operation = this.operations.pop();
@@ -137,11 +137,22 @@ class OperationManager {
     }
 
     redo() {
-        /*the redo method removes the most recent operation from the thjis.undos stack using
+        /*the redo method removes the most recent operation from the this.undos stack using
         th pop method, and then pushes it onto the this.operations stack using the push method. This means that
         the most recent operation that was undone is removed from the list of undone operations, and added back 
         to the list of operations that have been performed */
         const operation = this.undos.pop();
         this.operations.push(operation);
     }
+
+    redoAll() {
+        /*The while loop continues to execute as long as this.undos stack is not empty.
+        Within the loop, the redo methof is called, which pops the most recent operation
+        from the this,undos stack adn pushed it onto the this operations stack */
+        while (!this.undos.isEmpty()) {
+            this.redo();
+        }
 }
+
+}
+
