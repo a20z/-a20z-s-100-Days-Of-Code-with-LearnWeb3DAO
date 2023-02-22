@@ -94,7 +94,7 @@ class Stack {
     pop() {
         /*the pop method removes and returns the item at the top of the stack. Before removing the item,
         it checks if the stack is empty by comparing the current length of the stack to zero.
-        OIf the stack is empty, it throws an error with the messege "Sack Underflow" */
+        If the stack is empty, it throws an error with the messege "Sack Underflow" */
         if (this.items.length === 0) {
             throw new Error("Stack Underflow");
         }
@@ -109,5 +109,39 @@ class Stack {
         /* the peek method return the item at the top of the stack without removing it. It does
         this by returning the last item in the this.items array */
         return this.items[this.items.length - 1];
+    }
+}
+
+// Operations Manager
+
+const Stack = require('./Stack');
+
+class OperationManager {
+    /*The operationManager constructo creates two stacks, one called this.operations and 
+    one called this.undos, both if wehich are instances of a stack class which is imported*/
+    constructor() {
+        this.operations = new Stack();
+        this.undos = new Stack();
+    }
+    /*The addOperation method allows the user to add an operation to the this.operations
+    stack by calling the push methin on the this.operations stack */
+    addOperation(operation) {
+        this.operations.push(operation);
+    }
+    /*the undo method removes the most recent operation from the this.operations stack using the pop method
+    , and rhen pushes it into the this.undos stack using the push method. this means that the most recent 
+    operation is removed from the list of operations that have been undone*/
+    undo() {
+        const operation = this.operations.pop();
+        this.undos.push(operation);
+    }
+
+    redo() {
+        /*the redo method removes the most recent operation from the thjis.undos stack using
+        th pop method, and then pushes it onto the this.operations stack using the push method. This means that
+        the most recent operation that was undone is removed from the list of undone operations, and added back 
+        to the list of operations that have been performed */
+        const operation = this.undos.pop();
+        this.operations.push(operation);
     }
 }
