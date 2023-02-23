@@ -28,3 +28,15 @@ function deepRetrieval(obj) {
 
     return deepRetrieval(obj.prop);
 }
+
+/*
+
+Here's what the function does:
+
+It checks whether the obj argument is an object or not. If it's not an object, the function 
+logs the value of the prop property of the obj argument to the console and returns the obj.
+
+If the obj argument is an object, the function calls itself recursively with the value of the
+prop property of the obj. This recursive call will continue until it reaches a non-object value of the prop property.
+
+*/
