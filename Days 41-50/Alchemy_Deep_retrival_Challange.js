@@ -19,3 +19,12 @@ typeof operator will be usef ul in this challange
 --The typeof operator returns a string indicating the type of the operands value
 
 */
+
+function deepRetrieval(obj) {
+    if (typeof obj != "object") {
+        console.log(obj.prop);
+        return obj;
+    }
+
+    return deepRetrieval(obj.prop);
+}
