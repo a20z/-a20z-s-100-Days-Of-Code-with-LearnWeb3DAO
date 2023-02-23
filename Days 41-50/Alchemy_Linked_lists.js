@@ -17,10 +17,10 @@ class LinkedList {
 
 // Add first
 
-addFirst(node) {
+addFirst(node) 
     node.next = this.head;
     this.head = node; 
-}
+
 // Add last
 
 /*addLast method takse a node object and adds it to the end of the linked list,
@@ -29,7 +29,7 @@ the new node. Otherwise, it traverses the list starting from the head using
 a loop that checks if the nest property of that node to the new node, effectively 
 adding the new node at the end of the list */
 
-addLast(node) {
+addLast(node) 
     if(!this.head){ //checks if this.head is falsy
         this.head = node; //if linked list i empty, then the head property is set to node 
         return;
@@ -39,10 +39,10 @@ addLast(node) {
     //the while loop executes while ref.next is truthy
     while (ref.next) ref = ref.next;
     ref.next = node;
-}
+
 
 // index Of
-indexOf(node) {
+indexOf(node) 
     let idx = 0;
     let ptr = this.head;
 
@@ -54,11 +54,11 @@ indexOf(node) {
         idx++;
     }
     while(ptr)
-}
+
 
 // Remove at
 
-removeAt(index) {
+removeAt(index) 
     if (index === 0) {
         this.head = this.head.next;
         return;
@@ -73,4 +73,3 @@ removeAt(index) {
     }
 
     node.next = node.next.next;
-}
