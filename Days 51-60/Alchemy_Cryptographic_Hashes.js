@@ -1,5 +1,6 @@
-// Alchemy Cryptographic hashes
 
+<<<<<<< HEAD
+=======
 //Find favorite color
 const { sha256 } = require("ethereum-cryptography/sha256");
 const { toHex, utf8ToBytes } = require("ethereum-cryptography/utils");
@@ -15,10 +16,6 @@ function findColor(hash) {
 /*The find() method returns the first element in the provided array that satisfies 
 the provided testing function. If no values satisfy the testing function, undefined is returned.*/
 
-
-
-<<<<<<< HEAD
-do {
     // Hashing messeges
     
     const { keccak
@@ -62,6 +59,3 @@ const { keccak256 } = require("ethereum-cryptography/keccak");
 function getAddress(publicKey) {
     // the first byte indicates whether this is in compressed form or not
     return keccak256(publicKey.slice(1)).slice(-20);
-}
-=======
->>>>>>> 61e4d9e765a2938336ece6a6f4a62a5b497530aa
