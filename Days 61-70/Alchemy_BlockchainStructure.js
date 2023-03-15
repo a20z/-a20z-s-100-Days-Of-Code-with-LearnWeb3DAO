@@ -44,4 +44,4 @@ class Block {
 
 module.exports = Block;
 
-//
+JSON
