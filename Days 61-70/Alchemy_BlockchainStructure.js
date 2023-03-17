@@ -43,5 +43,3 @@ class Block {
 }
 
 module.exports = Block;
-
-// Commit
