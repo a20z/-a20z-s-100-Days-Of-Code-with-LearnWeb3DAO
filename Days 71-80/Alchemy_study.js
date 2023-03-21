@@ -1,1 +1,1 @@
-// Adam proje
+// Adam projec
