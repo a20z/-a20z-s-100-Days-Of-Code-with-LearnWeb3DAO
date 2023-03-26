@@ -1,1 +1,1 @@
-// Godzi
+// Godz
