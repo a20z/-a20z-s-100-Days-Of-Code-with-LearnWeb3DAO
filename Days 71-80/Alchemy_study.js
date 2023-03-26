@@ -1,1 +1,1 @@
-// Godz
+// Godzilla is king
