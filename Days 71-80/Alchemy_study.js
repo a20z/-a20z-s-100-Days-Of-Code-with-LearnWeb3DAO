@@ -1,1 +1,1 @@
-// Godzilla is kin
+// Godzilla is ki
