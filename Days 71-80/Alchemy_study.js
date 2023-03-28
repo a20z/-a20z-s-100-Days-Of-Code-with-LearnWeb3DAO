@@ -1,1 +1,1 @@
-// Godzilla is king
+// Godzilla is kin
