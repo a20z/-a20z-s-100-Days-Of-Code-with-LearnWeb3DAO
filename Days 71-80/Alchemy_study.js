@@ -1,3 +1,3 @@
 
 
-// Godzilla is Leon S
+// Godzilla is Leon S Kenedy
