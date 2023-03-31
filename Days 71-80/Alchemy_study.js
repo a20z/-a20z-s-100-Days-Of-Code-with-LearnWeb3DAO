@@ -1,3 +1,3 @@
 
 
-// Godzilla is Leon S Kenedy
+// Godzilla fights Leon S Kenedy
