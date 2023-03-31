@@ -1,3 +1,3 @@
 
 
-// Crypto Survival Horor
+// Crypto Survival Horror
